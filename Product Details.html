@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 23CEK067 Product details </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<style>
+	body{
+    		background-image: url("Background.jpg");
+    		background-attachment:fixed;
+    		background-size:100% 100%;
+    	}
+	</style>
+</head>
+<body>
+<h1 align=center>
+	<div ng-app="" ng-init="firstName='All Products'">
+		<p><span ng-bind="firstName"></span></p>
+	</div>
+</h1>
+<table border="2">
+	<tr>
+		<td>
+			<image src="Clutch 1.jpg" heigth="200px" width="300px">
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+    					<div> Product details:-</div>
+    					<div> Name:- Women Antic Gold Clutch</div>
+    					<div> Prize:- Rs. 2200</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+		<td>
+			<image src="Clutch 2.jpg" heigth="200px" width="300px"><br>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+    					<div> Product details:-</div>
+    					<div> Name:- Gold Clutch</div>
+    					<div> Prize:- Rs. 3000</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+		<td>
+			<image src="Clutch 3.jpg" heigth="200px" width="300px"><br>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+    					<div> Product details:-</div>
+    					<div> Name:- Bridal Clutch </div>
+    					<div> Prize:- Rs. 2500</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<image src="Clutch 4.jpg" heigth="200px" width="300px"><br>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+    					<div> Product details:-</div>
+    					<div> Name:- Rose Gold Clutch</div>
+    					<div> Prize:- Rs. 3500</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+		<td>
+			<image src="Clutch 5.jpg" heigth="200px" width="300px"><br>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+    					<div> Product details:-</div>
+    					<div> Name:- Women's Cocktail Clutch</div>
+    					<div> Prize:- Rs. 2400</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+		<td>
+			<image src="Clutch 6.jpg" heigth="200px" width="300px"><br>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<div ng-show="showMe">
+					<div> Product details:-</div>
+    					<div>Name:Customised Name Clutch</div>
+    					<div>Prize:2600</div>
+    					<div><button type="submit">Add to cart</button></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<script>
+var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope) {
+    $scope.showMe = false;
+    $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
+});
+</script>
+</body>
+</html>

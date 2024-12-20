@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 23CEK067 Order details </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<style>
+	body{
+    		background-image: url("Background.jpg");
+    		background-attachment:fixed;
+    		background-size:100% 100%;
+    	}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center;" ng-app="" ng-init="firstName='Order details'">
+		<p><span ng-bind="firstName"></span></p>
+	</h1>
+	<table border="2" width="1500px">
+		<thead>
+			<th> <h2> Serial number</h2> </th>
+			<th> <h2>Name of item</h2></th>
+			<th> <h2>Image</h2> </th>
+			<th><h2>Quantity</h2> </th>
+			<th> <h2>Price</h2> </th>
+		</thead>
+		<tr>
+			<td style="text-align:center;"><h3> 1 </h3></td>
+			<td style="text-align:center;"><h3> Gold Clutch</h3> </td>
+			<td> <image src="Clutch 2.jpg" height="200px" width="300px"></td>
+			<td style="text-align:center;"><h3><input type="number" value="2"></h3></td>
+			<td style="text-align:center;"> <h3>Rs. 3000</h3> </td>
+		</tr>
+		<tr>
+			<td style="text-align:center;"><h3> 2</h3> </td>
+			<td style="text-align:center;"><h3>Rose Gold Clutch</h3> </td>
+			<td> <image src="Clutch 4.jpg" height="200px" width="300px"></td>
+			<td style="text-align:center;"><h3><input type="number" value="1"></h3></td>
+			<td style="text-align:center;"> <h3>Rs. 3500 </h3></td>
+		</tr>
+		<tr>
+			<td style="text-align:center;"><h3> 3 </h3></td>
+			<td style="text-align:center;"> <h3> Customized Name Clutch</h3></td>
+			<td> <image src="Clutch 6.jpg" height="200px" width="300px"></td>
+			<td style="text-align:center;"><h3><input type="number" value="3"></h3></td>
+			<td style="text-align:center;"><h3> Rs. 2600</h3> </td>
+		</tr>
+	</table>
+	<h1> Order Summary:-</h1>
+	<h3>Total Price :- Rs. 17300</h3>
+	<h3>Total Quantity :- 6</h3>
+</body>
+</html>
